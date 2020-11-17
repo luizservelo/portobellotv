@@ -1,0 +1,70 @@
+.main-footer
+    transition: all .1s
+    background: $blue
+    padding: 1.6em 0 2.5em
+    
+
+    li
+        margin: 0 3em 
+
+        a
+            position: relative
+            text-align: center
+            display: block
+            width: 8em
+            height: 8em
+            padding-top: 1em
+            color: #ffffff
+            text-transform: uppercase
+            font-weight: bold
+            border-radius: 50%
+
+            background: no-repeat top 1em center
+            background-size: 50px
+
+            &::before
+                opacity: 0
+                content: ''
+                width: 1px
+                height: 1px
+                position: absolute
+                top: 50%
+                left: 50%
+                box-shadow: 0 0 50px 50px rgba(255, 255, 255, .09), 0 0 10px 4px rgba(255, 255, 255, .08), 0 0 10px 4px rgba(255, 255, 255, .08), 0 0 10px 12px rgba(255, 255, 255, .08),0 0 10px 16px rgba(255, 255, 255, .08)
+            
+            svg
+                width: 55px
+
+                path
+                    fill: #ffffff
+
+            span
+                transform: translateY(20px)
+                display: block
+                position: relative
+                letter-spacing: .02rem
+
+            svg, span
+                transition: all .2s
+
+            &.active
+                background-color: #ffffff
+                color: $blue
+
+                svg path
+                    fill: $blue    
+
+            &.j_navi-current
+                &:not(.active)::before
+                    opacity: 1
+
+                svg
+                    padding-bottom: 2px
+
+                span
+                    padding-top: 2px
+
+
+.pg-index
+    .main-footer
+        display: none

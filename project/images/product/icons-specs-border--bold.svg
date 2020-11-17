@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707480;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_borda_bold.svg" class="cls-1" d="M1112,182v-6h-12V164h18.5c2.49,0,5.5,3.015,5.5,5.5V182h-12Zm10-11.5a4.5,4.5,0,0,0-4.5-4.5H1102v8h12v6h8v-9.5Z" transform="translate(-1100 -164)"/>
+</svg>

@@ -1,0 +1,62 @@
+
+.btn
+    position: relative
+    display: inline-block
+    position: relative
+    margin: 0 5px 10px
+    padding: 13px 30px
+    border: 1px solid #d9d9d9
+    border-radius: 2px
+    background: #ffffff
+    font-size: 15px
+    font-weight: 500
+    color: #383d48
+    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+    -moz-box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+    box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+    text-decoration: none
+    outline: none
+    
+    .spinner
+        display: none
+
+    // ===== Cores
+    &.btn-transparent
+        background: transparent
+        color: #eeeeee
+        border-color: #eeeeee
+        
+    // &.btn-yellow
+    //     background-color: #bf9726
+    //     border-color: #aa8622
+    //     color: #ffffff
+
+    //     &:hover
+    //         color: #ffffff
+
+    //     &.btn-transparent
+    //         background: transparent
+    //         color: $yellow
+    //         border-color: $yellow
+
+    // ===== Loading em formularios
+    &.load
+        pointer-events: none
+        user-select: none
+        
+        // &.btn-yellow
+        //     color: #ecd195
+              
+        .spinner, .spinner-grow
+            display: block
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+    
+    // ===== Botao selecionado TV
+    &.j_navi-current
+        transition: all .1s
+        border: 2px solid #000000
+        transform: scale(1.02)

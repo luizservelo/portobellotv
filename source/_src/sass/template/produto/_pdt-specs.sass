@@ -1,0 +1,58 @@
+.specs-accordion
+
+    h3, .container-expand
+        padding: 1rem
+        background: #ffffff
+        border: 1px solid #e6e6e6
+
+    h3
+        margin-top: 35px
+        border-bottom: none
+
+    .container-expand
+        .title, .groutings
+            display: none
+
+
+        .specs-inline
+            &::after
+                content: ''
+                clear: both
+                display: block
+
+            > *
+                display: inline-block
+                width: 50%
+                float: left
+                padding: 10px 0
+                border: 1px solid transparent !important
+                border-bottom-color: #e6e6e6 !important
+    
+            dt 
+                position: relative
+                font-weight: 400
+                color: #777777
+
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    right: 1px
+                    width: 1px
+                    height: 50%
+                    background: #e6e6e6
+
+
+            dd
+                padding-left: 55px
+                background: no-repeat left 25px center
+                background-size: 20px
+                font-weight: 500
+                color: #000000
+
+                &.type, &.settlement, &.thickness
+                    padding-left: 25px
+
+            &.specs-packing
+                dd
+                    padding-left: 25px

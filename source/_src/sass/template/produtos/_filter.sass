@@ -1,0 +1,71 @@
+.pg-produtos
+    .side-filter
+        .accordion
+            border-bottom: 1px solid #e6e6e6
+
+        .fill-line
+            display: block
+            padding: 10px 20px 
+            border: 2px solid #e6e6e6
+            border-bottom: none
+            background: #ffffff
+            width: 100%
+            text-align: left
+
+            &[type="button"]
+                background-color: #ffffff
+                position: relative
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50% 
+                    right: 10px
+                    width: 10px
+                    height: 3px
+                    background: url('../images/ico-more.svg') no-repeat center center
+                    background-size: 100%
+                    transform: translateY(-50%)
+
+                &[aria-expanded="false"]
+                    background-color: #f4f4f4
+
+                    &::before
+                        height: 10px
+
+                &.j_navi-current
+                    border-bottom: 2px solid
+                    border-color: #000000
+
+            label
+                position: relative
+                margin-bottom: 10px
+                display: block
+                color: #666666
+
+                &::before
+                    opacity: 0
+                    content: '»'
+                    position: absolute
+                    top: -2px
+                    left: -13px
+
+                span
+                    opacity: .7
+                    font-size: 80%
+
+                &.j_navi-current
+                    color: #000000
+                        
+                    &::before
+                        opacity: 1
+
+                    
+
+
+        .fill-title
+            font-size: 1.1em
+            color: #000000
+            font-weight: $bold
+            border-top-left-radius: 3px
+            border-top-right-radius: 3px

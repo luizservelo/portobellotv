@@ -1,0 +1,42 @@
+body
+    background: #000000
+
+    &:not(.loading)
+        background: url('../images/splashscreen.jpg') no-repeat center center !important
+        background-size: cover !important
+main.main
+    // min-height: calc(100vh - 15em);
+
+.main-content
+    position: relative
+
+    z-index: -1
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    visibility: hidden
+    -webkit-transform: translateZ(0)
+    -moz-transform: translateZ(0)
+    -ms-transform: translateZ(0)
+    -o-transform: translateZ(0)
+    transform: translateZ(0)
+    -webkit-transform: translateY(100%)
+    -moz-transform: translateY(100%)
+    -ms-transform: translateY(100%)
+    -o-transform: translateY(100%)
+    transform: translateY(100%)
+    -webkit-transition: -webkit-transform 1s 0.5s
+    -moz-transition: -moz-transform 1s 0.5s
+    transition: transform 1s 0.5s
+
+    &.visible
+        position: relative
+        top: inherit
+        z-index: 2
+        -webkit-transform: translateY(0)
+        -moz-transform: translateY(0)
+        -ms-transform: translateY(0)
+        -o-transform: translateY(0)
+        transform: translateY(0)
+        -webkit-transition: -webkit-transform 0.5s 0s
+        -moz-transition: -moz-transform 0.5s 0s
+        transition: transform 0.5s 0s

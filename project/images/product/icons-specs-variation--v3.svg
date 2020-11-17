@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707480;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_variacao_v3.svg" class="cls-1" d="M874,252V228h24v24H874Zm22-9h-6v-6h6v-7H876v7h6v6h-6v7h7v-6h6v6h7v-7Z" transform="translate(-874 -228)"/>
+</svg>

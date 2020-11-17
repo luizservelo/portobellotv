@@ -1,0 +1,26 @@
+.pagination
+    li:not(:last-of-type)
+        margin-right: 10px
+    
+
+    .page-item.active
+        .page-link
+            background: $blue
+            box-shadow: none
+            border-color: #ffffff
+            
+    .page-link
+        outline: none
+        color: $blue
+        border-radius: 0 !important
+        border: 3px solid #f9f9f9
+        -webkit-box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+        -moz-box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+        box-shadow: inset 0px -4px 0px 0px rgba(241,241,241,1)
+
+        &:not(.j_navi-current)
+            border-color: #c2c2c2
+        
+        // ===== Botao selecionado TV
+        &.j_navi-current
+            border-color: #000000 !important

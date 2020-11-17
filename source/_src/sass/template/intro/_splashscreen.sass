@@ -1,0 +1,131 @@
+
+    
+    
+.main-splscr
+    position: relative
+    min-height: 80vw
+
+    // LOAD INICIAL
+    .loader-box
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 100%
+        height: 100%
+        transform: translate(-50%, -50%)
+        vertical-align: center
+
+        .loader,
+        .loader:after 
+            border-radius: 50%
+            width: 100px
+            height: 100px
+            
+        .loader 
+            margin: 0 auto
+            font-size: 10px
+            position: relative
+            text-indent: -9999em
+            border-top: 1.1em solid rgba(255, 255, 255, 0.1)
+            border-right: 1.1em solid rgba(255, 255, 255, 0.1)
+            border-bottom: 1.1em solid rgba(255, 255, 255, 0.1)
+            border-left: 1.1em solid #ffffff
+            -webkit-transform: translateZ(0)
+            -ms-transform: translateZ(0)
+            transform: translateZ(0)
+            -webkit-animation: load8 .6s infinite linear
+            animation: load8 .6s infinite linear
+
+        &.load
+            padding-top: 300px
+
+            .loader 
+                border-left-color: $blue
+
+    // CONTEUDO
+    .container
+        position: absolute        
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        min-height: 80vh
+
+        img.load
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+            width: 400px
+            max-width: 100%
+            margin: 0 auto
+
+    &.loaded
+        img.load
+            transition: top ease 1s, transform ease .8s
+            transform: translate(-50%, -50%) scale(.7)
+            top: calc(50% - 450px)
+
+
+    // SELECIONAR LINGUAGEM E CANAL
+    .signin
+        display: none
+
+        .flags
+            li
+                display: inline-block
+                margin: 0 2em 
+
+            label
+                border: none !important
+                display: block
+                transition: all .2s
+                -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.2)
+                -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.2)
+                box-shadow: 0 0 5px 0 rgba(0,0,0,.2)
+                
+
+            label, img
+                height: 4em
+                    
+            input
+                display: none
+
+                &[checked="checked"] + label,
+                &.naviactive + label
+                    background: $blue
+                    -webkit-box-shadow: 0 10px 12px 0 rgba(0,0,0,.6)
+                    -moz-box-shadow: 0 10px 12px 0 rgba(0,0,0,.6)
+                    box-shadow: 0 10px 12px 0 rgba(0,0,0,.6)
+                    transform: scale(1.08)
+                    
+        .channels
+            .btn
+                width: 300px
+                font-size: 1.2em
+                border-width: 2px
+
+                &:hover, &:focus
+                    box-shadow: none !important
+                    background: $blue
+                    color: #ffffff
+
+
+
+@-webkit-keyframes load8 
+    0% 
+        -webkit-transform: rotate(0deg)
+        transform: rotate(0deg)
+    
+    100% 
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+@keyframes load8 
+    0% 
+        -webkit-transform: rotate(0deg)
+        transform: rotate(0deg)
+    
+    100% 
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)

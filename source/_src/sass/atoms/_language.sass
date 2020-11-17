@@ -1,0 +1,26 @@
+body
+
+    &.lang-pt_BR
+        .lang-en,
+        .lang-es
+            display: none
+        
+        .lang-pt_BR
+            display: inherit !important
+
+
+    &.lang-en
+        .lang-pt_BR,
+        .lang-es
+            display: none
+
+        .lang-en
+            display: inherit !important
+
+    &.lang-es
+        .lang-pt_BR,
+        .lang-en
+            display: none
+
+        .lang-es
+            display: inherit !important

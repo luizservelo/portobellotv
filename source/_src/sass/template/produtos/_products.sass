@@ -1,0 +1,78 @@
+.list-products
+    .pdt
+        display: block
+        background: transparent
+        border-radius: 5px
+        clear: both
+        border: 3px solid transparent
+        box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .4)
+
+        &.j_navi-current
+            border-color: #000000
+            box-shadow: none
+
+        .pdt-image
+            background: #ffffff url(../images/spinner.gif) no-repeat center center
+            background-size: 30px
+            position: relative
+            height: 350px
+
+            &.lazy-ok
+                background: #ffffff
+
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                max-height: 95%
+                max-width: 95%
+
+        .pdt-details
+            border-top: 1px solid #e6e6e6
+            background: #f4f4f4
+
+        .pdt-title
+            color: #000000
+            font-weight: $bold
+            font-size: 1.2em
+
+            span
+                text-transform: capitalize
+
+            .new
+                opacity: .7
+                font-size: .7em
+                text-transform: uppercase
+                margin-right: 5px
+                font-weight: $regular
+
+        .pdt-specs
+            border-top: 1px solid #e6e6e6
+
+            .row > div:last-of-type
+                border-left: 1px solid #e6e6e6
+
+            .col-6
+                background-size: 20px
+                background: no-repeat left 15px center
+                
+                &:nth-child(1)
+                    background-image: url(../images/product/icons-specs-dimensions.svg)
+
+                &:nth-child(2)
+                    background-image: url(../images/product/icons-specs-surface--natural.svg)
+
+            .item
+                line-height: 1.1
+                padding-left: 30px
+                font-size: 1.1em
+                color: #343434
+
+                span
+                    display: block
+                    font-size: .7em
+                    text-transform: uppercase
+                    margin-right: 5px
+                    font-weight: $regular
+                    color: #999999

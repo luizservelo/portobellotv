@@ -1,0 +1,9 @@
+__FILES/
+source/_gulp/node_modules/
+source/_gulp/package-lock.json
+
+project/.*/
+project/.*
+project/lib/
+project/*.wgt
+

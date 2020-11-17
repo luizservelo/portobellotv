@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- include CAPH 3.1.0 default package -->
+    <link href="lib/caph/3.1.0/caph.min.css" rel="stylesheet" type="text/stylesheet">
+
+    <!-- include jQuery file (you can use jQuery in your environment) -->
+    <script src="lib/caph/3.1.0/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+    <!-- include hammer js for touch feature (uncomment to enable touch feature) -->
+    <!-- <script src="lib/caph/3.1.0/hammerjs/hammer.min.js" type="text/javascript"></script>  -->
+
+    <!-- include the CAPH Package for jquery -->
+    <script src="lib/caph/3.1.0/caph-jquery.min.js" type="text/javascript"></script>
+
+    <!-- portobello -->
+    <script src="js/lazyload.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/jquery.jsonrpcclient.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-produto">
+    <div class="wrapper">
+        <header class="main-header">
+            <img class="img" src="./images/logo.png">
+        </header>
+    
+        <main class="main">
+            <!-- CONTENT -->
+            <section class="main-content visible">
+                <div class="container">
+                    <h2 class="pdt-title j_name">Nome do produto</h2>
+                    <div class="mt-3 mb-4 pdt-slide">
+                        <div class="owl-carousel pdt-owl j_pdtCarousel">
+                            ...
+                        </div>
+                    </div>                
+                    <div class="j_pdtSpecs pdt-specs">
+                        ...
+                    </div>
+                    <div class="pt-5 d-block clearfix"></div>
+                </div>
+            </section>
+            <!-- [end] CONTENT -->
+        </main>
+    
+        <footer class="main-footer">
+            <nav class="container">
+                <ul class="row pt-3 d-flex align-items-center justify-content-center" data-navi="100">
+                    <li><a href="index.html" class="active">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
+                        c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
+                        c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z"/> </g> </g> <g> <g> <path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
+                        s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
+                        c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
+                        c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
+                        c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
+                        C455.549,238.499,449.593,232.543,442.246,232.543z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="busca.html">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612.01 612.01" style="enable-background:new 0 0 612.01 612.01;" xml:space="preserve"><g>	<g id="_x34__4_">		<g>			<path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0 C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586 l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8 c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407 S377.82,467.8,257.493,467.8z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <span>Buscar</span>
+                    </a></li>
+                    <li><a class="noload j_getVideo" href="#0">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 30.065 30.065" style="enable-background:new 0 0 30.065 30.065;" xml:space="preserve"><g><path d="M26.511,12.004L6.233,0.463c-2.151-1.228-4.344,0.115-4.344,2.53v24.093
+                        c0,2.046,1.332,2.979,2.57,2.979c0.583,0,1.177-0.184,1.767-0.543l20.369-12.468c1.024-0.629,1.599-1.56,1.581-2.555
+                        C28.159,13.503,27.553,12.593,26.511,12.004z M25.23,14.827L4.862,27.292c-0.137,0.084-0.245,0.126-0.319,0.147
+                        c-0.02-0.074-0.04-0.188-0.04-0.353V2.994c0-0.248,0.045-0.373,0.045-0.404c0.08,0.005,0.22,0.046,0.396,0.146l20.275,11.541
+                        c0.25,0.143,0.324,0.267,0.348,0.24C25.554,14.551,25.469,14.678,25.23,14.827z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <span>Vídeo</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </footer>
+        <div id="load-bar" data-scale="1"></div>
+    </div>
+</body>
+</html>

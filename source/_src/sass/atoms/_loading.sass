@@ -1,0 +1,21 @@
+
+#load-bar 
+    position: fixed
+    z-index: 2
+    left: 0
+    top: 0
+    height: 10px
+    visibility: hidden
+    background-color: $blue
+
+    /* Force Hardware Acceleration */
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    -webkit-transform: translateZ(0)
+    -moz-transform: translateZ(0)
+    -ms-transform: translateZ(0)
+    -o-transform: translateZ(0)
+    transform: translateZ(0)
+    
+    &.loading 
+        visibility: visible

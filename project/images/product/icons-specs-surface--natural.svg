@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707480;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_superficie_natural.svg" class="cls-1" d="M934,188V164h24v24H934Zm15.586-22H936v20h20V166.707l-8.646,8.647-0.708-.708L955.293,166h-2.879l-11.778,11.778-1.414-1.414Z" transform="translate(-934 -164)"/>
+</svg>

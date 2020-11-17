@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- include CAPH 3.1.0 default package -->
+    <link href="lib/caph/3.1.0/caph.min.css" rel="stylesheet" type="text/stylesheet">
+
+    <!-- include jQuery file (you can use jQuery in your environment) -->
+    <script src="lib/caph/3.1.0/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+    <!-- include hammer js for touch feature (uncomment to enable touch feature) -->
+    <!-- <script src="lib/caph/3.1.0/hammerjs/hammer.min.js" type="text/javascript"></script>  -->
+
+    <!-- include the CAPH Package for jquery -->
+    <script src="lib/caph/3.1.0/caph-jquery.min.js" type="text/javascript"></script>
+
+    <!-- portobello -->
+    <script src="js/lazyload.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/jquery.jsonrpcclient.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-produtos">
+    <div class="wrapper">
+        <header class="main-header">
+            <img class="img" src="./images/logo.png">
+        </header>
+    
+        <main class="main">
+            <!-- CONTENT -->
+            <section class="main-content visible">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <sidebar class="side-filter filter" data-navi="1" data-navi-function="naviProducts_filter">
+                                <span class="fill-line fill-title">Filtro</span>
+                                
+                                <div class="accordion side-filter--container" id="filter">
+                                    ...
+                                </div>
+                                <div class="mt-4 mb-5" data-navi="2">
+                                    <a href="index.html" class="m-0 btn btn-outline-dark btn-lg w-100 d-block">
+                                        Alterar canal de venda
+                                    </a>
+                                </div>
+                            </sidebar>
+                        </div>
+                        <div class="col-9 mb-5">
+                            <div class="row list-products products--container" data-navi="3" data-navi-function="naviProducts_grid">
+                                ...
+                            </div>
+                            <div class="mt-3">
+                                <ul class="pagination pagination-lg j_pagination" data-navi="4" data-navi-function="naviProducts_pager">...</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            <!-- [end] CONTENT -->
+        </main>
+    
+        <footer class="main-footer">
+            <nav class="container main">
+                <ul class="row pt-3 d-flex align-items-center justify-content-center" data-navi="100">
+                    <li><a href="index.html" class="active">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
+                        c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
+                        c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z"/> </g> </g> <g> <g> <path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
+                        s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
+                        c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
+                        c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
+                        c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
+                        C455.549,238.499,449.593,232.543,442.246,232.543z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="busca.html">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612.01 612.01" style="enable-background:new 0 0 612.01 612.01;" xml:space="preserve"><g>	<g id="_x34__4_">		<g>			<path d="M606.209,578.714L448.198,423.228C489.576,378.272,515,318.817,515,253.393C514.98,113.439,399.704,0,257.493,0 C115.282,0,0.006,113.439,0.006,253.393s115.276,253.393,257.487,253.393c61.445,0,117.801-21.253,162.068-56.586 l158.624,156.099c7.729,7.614,20.277,7.614,28.006,0C613.938,598.686,613.938,586.328,606.209,578.714z M257.493,467.8 c-120.326,0-217.869-95.993-217.869-214.407S137.167,38.986,257.493,38.986c120.327,0,217.869,95.993,217.869,214.407 S377.82,467.8,257.493,467.8z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <span>Buscar</span>
+                    </a></li>
+                    <li><a class="noload j_getVideo" href="#0">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 30.065 30.065" style="enable-background:new 0 0 30.065 30.065;" xml:space="preserve"><g><path d="M26.511,12.004L6.233,0.463c-2.151-1.228-4.344,0.115-4.344,2.53v24.093
+                        c0,2.046,1.332,2.979,2.57,2.979c0.583,0,1.177-0.184,1.767-0.543l20.369-12.468c1.024-0.629,1.599-1.56,1.581-2.555
+                        C28.159,13.503,27.553,12.593,26.511,12.004z M25.23,14.827L4.862,27.292c-0.137,0.084-0.245,0.126-0.319,0.147
+                        c-0.02-0.074-0.04-0.188-0.04-0.353V2.994c0-0.248,0.045-0.373,0.045-0.404c0.08,0.005,0.22,0.046,0.396,0.146l20.275,11.541
+                        c0.25,0.143,0.324,0.267,0.348,0.24C25.554,14.551,25.469,14.678,25.23,14.827z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        <span>Vídeo</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </footer>
+    
+        <div class="video-container" style="display:none;">
+            <div class="main-video">
+                <button class="close">Fechar</button>
+                
+                <video id="main-video">
+                    <source src="./images/video/test.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video
+                </video>
+                
+                <button class="j_play play-pause play">
+                    <div class="play">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 142.448 142.448" style="enable-background:new 0 0 142.448 142.448;" xml:space="preserve"><g><path style="fill:#1D1D1B;" d="M142.411,68.9C141.216,31.48,110.968,1.233,73.549,0.038c-20.361-0.646-39.41,7.104-53.488,21.639C6.527,35.65-0.584,54.071,0.038,73.549c1.194,37.419,31.442,67.667,68.861,68.861c0.779,0.025,1.551,0.037,2.325,0.037 c19.454,0,37.624-7.698,51.163-21.676C135.921,106.799,143.033,88.377,142.411,68.9z M111.613,110.336 c-10.688,11.035-25.032,17.112-40.389,17.112c-0.614,0-1.228-0.01-1.847-0.029c-29.532-0.943-53.404-24.815-54.348-54.348 c-0.491-15.382,5.122-29.928,15.806-40.958c10.688-11.035,25.032-17.112,40.389-17.112c0.614,0,1.228,0.01,1.847,0.029 c29.532,0.943,53.404,24.815,54.348,54.348C127.91,84.76,122.296,99.306,111.613,110.336z"/><path style="fill:#1D1D1B;" d="M94.585,67.086L63.001,44.44c-3.369-2.416-8.059-0.008-8.059,4.138v45.293c0,4.146,4.69,6.554,8.059,4.138l31.583-22.647C97.418,73.331,97.418,69.118,94.585,67.086z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                    </div>
+                    <div class="pause">
+                        <svg id="Layer_7" enable-background="new 0 0 511.448 511.448" viewBox="0 0 511.448 511.448" xmlns="http://www.w3.org/2000/svg"><path d="m436.508 74.94c-99.913-99.913-261.64-99.928-361.567 0-99.913 99.913-99.928 261.64 0 361.567 99.913 99.913 261.64 99.928 361.567 0 99.912-99.912 99.927-261.639 0-361.567zm-180.784 394.45c-117.816 0-213.667-95.851-213.667-213.667s95.851-213.666 213.667-213.666 213.666 95.851 213.666 213.667-95.85 213.666-213.666 213.666z"/><path d="m298.39 160.057c-11.598 0-21 9.402-21 21v149.333c0 11.598 9.402 21 21 21s21-9.402 21-21v-149.333c0-11.598-9.401-21-21-21z"/><path d="m213.057 160.057c-11.598 0-21 9.402-21 21v149.333c0 11.598 9.402 21 21 21s21-9.402 21-21v-149.333c0-11.598-9.401-21-21-21z"/></svg>
+                    </div>
+                </button> 
+            </div>
+        </div>
+        <div id="load-bar" data-scale="1"></div>
+    </div>
+
+
+    <script>
+
+    </script>
+
+</body>
+</html>
